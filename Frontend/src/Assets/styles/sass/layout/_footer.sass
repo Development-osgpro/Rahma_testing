@@ -1,0 +1,148 @@
+@import './variables'
+
+.Footer
+    position: relative
+    z-index: 8000
+    padding: 3rem 0
+    .container
+        @media ( max-width: 991px )
+            width: 100% !important
+        .footer-children
+            display: flex
+            justify-content: space-between
+            @media ( max-width: 991px )
+                flex-wrap: wrap
+            .usful-links
+                width: 20%
+                margin: 0 0.5rem
+                @media ( max-width: 991px )
+                    width: 30%
+                    margin-bottom: 2rem
+                ul
+                    padding: 0 !important
+                    list-style: none
+                    li
+                        color: white
+                        margin: 0.5rem 0
+                        padding: 0.4rem 0
+                        font-size: 20px
+                        border-bottom: 2px dashed gray
+                        &:first-of-type
+                            margin: 0rem !important
+                        @media ( max-width: 1199px )
+                            font-size: 18px
+                @media ( max-width: 500px )
+                    width: 100%
+                    margin-left: 0 !important
+                    margin-right: 0  !important
+            .contact
+                height: 100%
+                padding-bottom: 2rem 
+                width: 25%
+                margin: 0rem 3rem
+                border-bottom: 2px dashed gray
+                h5
+                    color: white
+                    border-bottom: 2px dashed gray
+                    padding-bottom: 1rem
+                a
+                    color: white
+                    text-decoration: none
+                    i
+                        margin-right: 0.5rem
+                        margin-top: 1rem 
+                @media ( max-width: 991px )
+                    width: 40%
+                    margin-bottom: 2rem
+                @media ( max-width: 500px )
+                    width: 100%
+                    margin: 1rem 0.5rem 2.5rem 0 !important
+            .rahma-message
+                width: 50%
+                color: white
+                img
+                    max-width: 300px
+                    border-bottom: 2px dashed gray
+                    padding-bottom: 1rem
+                    margin-bottom: 1rem
+                    @media ( max-width: 650px )
+                        max-width: 250px
+                h5
+                    font-weight: 300
+                @media ( max-width: 500px )
+                    width: 100%
+                .social-icons
+                    display: flex
+                    a
+                        background-color: white
+                        margin: 1rem 0.5rem
+                        text-align: center
+                        line-height: 35px
+                        cursor: pointer
+                        width: 35px !important
+                        height: 35px !important
+                        border-radius: 50%
+                        i
+                            color: $main-blue
+                            font-weight: 600
+                        &:hover
+                            i
+                                transition: all .5s ease-in-out
+                                color: $main-green
+        .footer-sign-up
+            margin: 1rem 0
+            display: flex
+            @media ( max-width: 1199px )
+                flex-direction: column !important
+            h2
+                color: white
+                width: 40%
+                @media ( max-width: 1399px )
+                    width: 50%
+                @media ( max-width: 1199px )
+                    width: 100%
+            form
+                width: 60%
+                @media ( max-width: 1199px )
+                    width: 100%
+                    height: 45px
+                    margin-top: 1rem
+                @media ( max-width: 577px )
+                    flex-direction: column
+                    display: flex
+                @media ( max-width: 577px )
+                    height: auto !important
+                input
+                    margin: 0 0.5rem
+                    outline: none
+                    border: none
+                    border-radius: 15px
+                    padding: 0 1rem
+                    width: 30%
+                    font-weight: 600
+                    height: 100%
+                    &:last-of-type
+                        background-color: gray
+                        color: white
+                        width: 20%
+                        @media ( max-width: 577px )
+                            width: 50%
+                            margin: auto
+                            margin-top: 1rem
+                    @media ( max-width: 577px )
+                        margin: 0.5rem 0
+                        min-height: 40px
+                        width: 100%
+
+.copyright
+    background-color: $main-blue
+    padding: 1rem 0
+    text-align: center
+    position: relative
+    z-index: 8000
+    p
+        margin-bottom: 0 !important
+        color: white
+        font-weight: 600
+        @media ( max-width: 768px )
+            font-size: 13px
